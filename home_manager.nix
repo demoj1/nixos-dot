@@ -9,6 +9,8 @@
         "vim-nix"
         "youcompleteme"
         "vim-addon-nix"
+        "vim-gitgutter"
+        "ctrlp-vim"
       ];
       settings = { ignorecase = true; };
       extraConfig = ''
