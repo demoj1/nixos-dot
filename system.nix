@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   networking.hostName = "dmr";
 
@@ -13,10 +13,22 @@
   services.openssh.enable = true;
 
   sound.enable = true;
+
   hardware.pulseaudio.enable = true;
 
   system.stateVersion = "18.09";
   system.autoUpgrade.enable = true;
 
   nixpkgs.config.allowUnfree = true;
+
+  fonts = {
+    fonts = with pkgs; [
+      fira-code
+    ];
+  };
+
+  environment.variables = {
+    EDITOR = "vim";
+    SUDO_EDITOR = "vim";
+  };
 }

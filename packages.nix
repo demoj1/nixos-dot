@@ -18,5 +18,9 @@
     # Other
     google-chrome
     tdesktop
+    mc
+
+    # Fonts
+    fira-code
   ];
 }
