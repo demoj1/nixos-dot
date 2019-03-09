@@ -1,14 +1,22 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    # Dev
     wget
-    vim
     git
+    guake
+    fish
+
+    ## Lang
+    elixir
+
+    ## Editors
     vscode
     sublime3
+    vim
+
+    # Other
     google-chrome
-    fish
-    guake
     tdesktop
   ];
 }
