@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   networking.hostName = "dmr";
+  networking.networkmanager.enable = true;
 
   i18n = {
     consoleFont = "Lat2-Terminus16";

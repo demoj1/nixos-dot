@@ -19,6 +19,12 @@
     google-chrome
     tdesktop
     mc
+    inkscape
+    flameshot
+
+    ## Network
+    openconnect
+    networkmanager
 
     # Fonts
     fira-code
