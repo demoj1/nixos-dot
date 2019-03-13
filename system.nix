@@ -12,6 +12,7 @@
   time.timeZone = "Asia/Novosibirsk";
 
   services.openssh.enable = true;
+  services.emacs.enable = true;
 
   sound.enable = true;
 
@@ -23,13 +24,16 @@
   nixpkgs.config.allowUnfree = true;
 
   fonts = {
+    fontconfig.ultimate.enable = true;
     fonts = with pkgs; [
       fira-code
+      source-code-pro
     ];
   };
 
   environment.variables = {
     EDITOR = "vim";
     SUDO_EDITOR = "vim";
+    ENV_DIR = "/home/dmr/.venvs";
   };
 }

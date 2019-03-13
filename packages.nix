@@ -6,6 +6,7 @@
     git
     guake
     fish
+    ctags
 
     ## Lang
     elixir
@@ -13,7 +14,9 @@
     ## Editors
     vscode
     sublime3
+    jetbrains.pycharm-community
     vim
+    emacs
 
     # Other
     google-chrome
@@ -28,5 +31,6 @@
 
     # Fonts
     fira-code
+    source-code-pro
   ];
 }
