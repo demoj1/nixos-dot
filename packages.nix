@@ -10,6 +10,7 @@
 
     ## Lang
     elixir
+    rustup
 
     ## Editors
     vscode
