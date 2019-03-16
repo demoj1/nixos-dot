@@ -7,6 +7,8 @@
     guake
     fish
     ctags
+    docker_compose
+    docker
 
     ## Lang
     elixir
@@ -25,6 +27,8 @@
     mc
     inkscape
     flameshot
+    vlc
+    tree
 
     ## Network
     openconnect

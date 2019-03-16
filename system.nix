@@ -36,4 +36,6 @@
     SUDO_EDITOR = "vim";
     ENV_DIR = "/home/dmr/.venvs";
   };
+
+  virtualisation.docker.enable = true;
 }
