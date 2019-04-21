@@ -9,10 +9,14 @@
     ctags
     docker_compose
     docker
+    libcap # for go
+    gcc    # for go
+
 
     ## Lang
     elixir
     rustup
+    go
 
     ## Editors
     vscode

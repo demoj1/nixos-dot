@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 {
+  users.extraGroups.vboxusers.members = [ "dmr" ];
   users.users.dmr = {
     isNormalUser = true;
     extraGroups = [ 

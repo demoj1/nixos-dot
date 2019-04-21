@@ -3,7 +3,7 @@
   services = {
     xserver = {
       enable = true;
-      videoDrivers = [ "nvidia" ];
+      # videoDrivers = [ "nvidia" ];
       desktopManager.gnome3.enable = true;
       layout = "us";
     };
