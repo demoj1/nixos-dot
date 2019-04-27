@@ -35,6 +35,7 @@
     EDITOR = "vim";
     SUDO_EDITOR = "vim";
     ENV_DIR = "/home/dmr/.venvs";
+    GOPATH = "/home/dmr/go";
   };
 
   virtualisation.docker.enable = true;

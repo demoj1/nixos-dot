@@ -4,16 +4,17 @@
     # Dev
     wget
     git
-    guake
     fish
     ctags
     docker_compose
     docker
     libcap # for go
     gcc    # for go
-
+    gnumake
+    ffmpeg-full
 
     ## Lang
+    erlang
     elixir
     rustup
     go
@@ -22,6 +23,7 @@
     vscode
     sublime3
     jetbrains.pycharm-community
+    jetbrains.idea-community
     vim
     emacs
 
@@ -33,6 +35,8 @@
     flameshot
     vlc
     tree
+    zoom-us
+    smartgithg
 
     ## Network
     openconnect
