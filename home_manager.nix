@@ -15,6 +15,7 @@
       settings = { ignorecase = true; };
       extraConfig = ''
         set mouse=a
+        set encoding=utf-8
         map <F2> :NERDTreeToggle<CR>
         map <F3> :NERDTreeFind<CR>
       '';

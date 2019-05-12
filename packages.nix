@@ -12,6 +12,10 @@
     gcc    # for go
     gnumake
     ffmpeg-full
+    teamviewer
+    nodejs
+    inotify-tools
+    sqlite
 
     ## Lang
     erlang
@@ -37,6 +41,14 @@
     tree
     zoom-us
     smartgithg
+    gnome3.gnome-shell-extensions
+    chrome-gnome-shell
+    thunderbird
+    obs-studio
+    steam
+
+    tmux
+    tmuxp
 
     ## Network
     openconnect
