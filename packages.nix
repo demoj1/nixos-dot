@@ -4,6 +4,7 @@
     # Dev
     wget
     git
+    gitAndTools.tig
     zsh
     oh-my-zsh
     fzf
@@ -19,11 +20,15 @@
     inotify-tools
     sqlite
 
+    libGLU
+    libGL
+    libGL_driver
+
     yakuake
 
     ## Lang
     erlang
-    elixir
+    elixir_1_8
     rustup
     go
 
@@ -34,6 +39,7 @@
     jetbrains.idea-community
     vim
     emacs
+    typora
 
     # Other
     google-chrome
@@ -52,6 +58,9 @@
     thunderbird
     obs-studio
     steam
+    feh
+    arandr
+    discord
 
     tmux
     tmuxp

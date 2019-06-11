@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   services = {
     xserver = {
@@ -11,6 +11,9 @@
 
       desktopManager.gnome3.enable = true;
       desktopManager.plasma5.enable = true;
+
+      windowManager.i3.enable = true;
+      windowManager.i3.package = pkgs.i3-gaps;
     };
   };
 }

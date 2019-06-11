@@ -11,11 +11,21 @@
   time.timeZone = "Asia/Novosibirsk";
 
   services.openssh.enable = true;
+  services.openssh.authorizedKeysFiles = ["~/.ssh/id_rsa"];
+  services.openssh.passwordAuthentication = false;
+  services.openssh.permitRootLogin = "yes";
+  services.openssh.challengeResponseAuthentication = false;
+
   services.emacs.enable = false;
 
   sound.enable = true;
 
   hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.extraConfig = ''
+  unload-module module-device-restore
+  unload-module module-stream-restore
+  unload-module module-card-restore
+  '';
 
   system.stateVersion = "19.03";
   system.autoUpgrade.enable = true;
@@ -35,6 +45,7 @@
     SUDO_EDITOR = "vim";
     ENV_DIR = "/home/dmr/.venvs";
     GOPATH = "/home/dmr/go";
+    ERL_AFLAGS="-kernel shell_history enabled";
   };
 
   virtualisation.docker.enable = true;
