@@ -31,6 +31,9 @@
     elixir_1_8
     rustup
     go
+    (python35.withPackages(ps: with ps; [ 
+      litecli
+    ]))
 
     ## Editors
     vscode
@@ -42,6 +45,7 @@
     typora
 
     # Other
+    vivaldi
     google-chrome
     tdesktop
     mc
@@ -61,6 +65,10 @@
     feh
     arandr
     discord
+    ntfs3g
+    vte
+    glava
+    i3-easyfocus
 
     tmux
     tmuxp
@@ -77,10 +85,11 @@
   programs.zsh.enable = true;
   programs.zsh.interactiveShellInit = ''
     export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
+    export FZF_BASE="$(whereis fzf)"
 
     # Customize your oh-my-zsh options here
     ZSH_THEME="bureau"
-    plugins=(git docker fzf ssh-agent docker-compose git-promt emoji)
+    plugins=(git docker fzf ssh-agent docker-compose git-promt emoji zsh-autosuggestions)
 
     bindkey '\e[5~' history-beginning-search-backward
     bindkey '\e[6~' history-beginning-search-forward
