@@ -9,11 +9,11 @@
 
       videoDrivers = [ "nvidia" ];
 
-      desktopManager.gnome3.enable = true;
+      desktopManager.gnome3.enable = false;
       desktopManager.plasma5.enable = true;
 
-      windowManager.i3.enable = true;
-      windowManager.i3.package = pkgs.i3-gaps;
+      # windowManager.i3.enable = true;
+      # windowManager.i3.package = pkgs.i3-gaps;
     };
   };
 }

@@ -33,5 +33,13 @@
     opengl.driSupport32Bit = true;
     opengl.enable = true;
     nvidia.modesetting.enable = true;
+    bluetooth.enable = true;
+    bluetooth.extraConfig = "
+      [General]
+      Enable=Gateway,Source,Socket
+      Master=true
+      HFP=true
+      HSP=true
+    ";
   };
 }

@@ -10,22 +10,30 @@
 
   time.timeZone = "Asia/Novosibirsk";
 
-  services.openssh.enable = true;
-  services.openssh.authorizedKeysFiles = ["~/.ssh/id_rsa"];
-  services.openssh.passwordAuthentication = false;
-  services.openssh.permitRootLogin = "yes";
-  services.openssh.challengeResponseAuthentication = false;
+  services.openssh = {
+    enable = true;
+    authorizedKeysFiles = ["~/.ssh/id_rsa"];
+    passwordAuthentication = false;
+    permitRootLogin = "yes";
+    challengeResponseAuthentication = false;
+  };
 
   services.emacs.enable = false;
 
   sound.enable = true;
 
-  hardware.pulseaudio.enable = true;
-  hardware.pulseaudio.extraConfig = ''
-  unload-module module-device-restore
-  unload-module module-stream-restore
-  unload-module module-card-restore
-  '';
+  hardware.pulseaudio = {
+    package = pkgs.pulseaudioFull;
+    enable = true;
+    extraModules = [ pkgs.pulseaudio-modules-bt ];
+    extraConfig = ''
+      load-module module-bluetooth-policy
+      load-module module-bluetooth-discover
+      # unload-module module-device-restore
+      # unload-module module-stream-restore
+      # unload-module module-card-restore
+    '';
+  };
 
   system.stateVersion = "19.03";
   system.autoUpgrade.enable = true;

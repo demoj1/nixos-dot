@@ -27,7 +27,10 @@
     yakuake
 
     ## Lang
-    erlang
+    (erlang.override {
+      odbcSupport = true;
+      wxSupport = true;
+    })
     elixir_1_8
     rustup
     go
@@ -35,16 +38,28 @@
       litecli
     ]))
 
+    # haskellPackages.ghc
+    # haskellPackages.cabal-install
+    # haskellPackages.stack
+    # haskellPackages.hlint
+    # haskellPackages.shake
+    # haskellPackages.turtle
+    # haskellPackages.cmdargs
+    # haskellPackages.intero
+
     ## Editors
     vscode
     sublime3
-    jetbrains.pycharm-community
-    jetbrains.idea-community
     vim
     emacs
     typora
 
     # Other
+    blueman
+    bluezFull
+    bluez-alsa
+    bluez-tools
+    
     vivaldi
     google-chrome
     tdesktop
@@ -54,14 +69,12 @@
     vlc
     tree
     zoom-us
-    smartgithg
     gitkraken
     meld
     gnome3.gnome-shell-extensions
     chrome-gnome-shell
     thunderbird
     obs-studio
-    steam
     feh
     arandr
     discord
